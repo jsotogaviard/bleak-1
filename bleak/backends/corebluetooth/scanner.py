@@ -119,7 +119,6 @@ class BleakScannerCoreBluetooth(BaseBleakScanner):
             manufacturer_binary_data = advertisementData.get(
                 "kCBAdvDataManufacturerData"
             )
-
             manufacturer_data = {}
             if manufacturer_binary_data:
                 manufacturer_id = int.from_bytes(
